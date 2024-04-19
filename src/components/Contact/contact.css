@@ -1,0 +1,95 @@
+/* contact.css */
+
+#contactPage {
+    background-color:rgb(30, 30, 30);
+    padding: 50px 0;
+  }
+  
+  .contact {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contactPageTitle {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .contactDesc {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .contactForm {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  
+  .name,
+  .email,
+  .msg {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .msg {
+    height: 150px;
+  }
+  
+  .submitBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: gold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitBtn:hover {
+    background-color: goldenrod;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .link {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .contactPage{
+        padding: 30px 15px;
+    }
+    .contactPageTitle {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+  
+    .contactDesc {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+    .contactForm{
+        grid-gap: 15px;
+    }
+  
+    .msg {
+      height: 120px;
+    }
+  }
