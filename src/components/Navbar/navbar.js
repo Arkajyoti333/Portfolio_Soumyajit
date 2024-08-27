@@ -27,7 +27,7 @@ const Navbar = () => {
         <img src={menu} alt="Menu" className="mobMenu" onClick={()=>setShowMenu(!showMenu)} />
         <div className="navMenu" style={{display : showMenu ? 'flex': 'none'}}>
             <Link activeClass="active" to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Home</Link>
-            <a className="listItemCV" href={resumePdf}  target="_blank">Resume</a>
+            <a className="listItemCV" href={resumePdf}  target="blank" >Resume</a>
             <Link activeClass="active" to='skills' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Skills</Link>
             <Link activeClass="active" to='works' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Achievements</Link>
             <Link activeClass="active" to='contactPage' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Contact Me</Link>

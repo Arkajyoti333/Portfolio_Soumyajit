@@ -1,6 +1,11 @@
 import React from 'react';
 import './intro.css';
 import bg from '../../assets/dp.png';
+// import FBIcon from '../../assets/facebook-icon.png'
+// import IGIcon from '../../assets/instagram.png'
+// import X from '../../assets/twitter.png'
+// import Lin from '../../assets/linkedIn.png'
+// import git from '../../assets/git.png'
 import {Link} from 'react-scroll'
 import hm from '../../assets/hireme.png'
 const Intro = () => {
@@ -14,6 +19,23 @@ const Intro = () => {
       </div>
         <div>
           <img src={bg} alt='dp' className='bg'/>
+          {/* <div className='links'>
+                  <a href='https://www.facebook.com/soumyajit.ray.75'>
+                  <img src={FBIcon} alt='facebook' className='link'/>
+                  </a>
+                  <a href='https://www.instagram.com/soumyajit_ray/'>
+                  <img src={IGIcon} alt='insta' className='link'/>
+                  </a>
+                  <a href='https://twitter.com/SoumyajitRay5'>
+                  <img src={X} alt='facebook' className='link'/>
+                  </a>
+                  <a href='https://www.linkedin.com/in/soumyajit-ray2002/'>
+                  <img src={Lin} alt='linkedIn' className='link'/>
+                  </a>
+                  <a href='https://github.com/somu46'>
+                  <img src={git} alt='github' className='link'/>
+                  </a>
+            </div> */}
         </div>  
     </section>
   )

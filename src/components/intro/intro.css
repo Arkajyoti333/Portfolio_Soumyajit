@@ -76,6 +76,19 @@
     display: inline-block;
     transform-origin: 70% 70%;
   }
+  /* .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+  }
+  
+  .link {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  } */
+  
   
   @keyframes wave-animation {
     0% {
