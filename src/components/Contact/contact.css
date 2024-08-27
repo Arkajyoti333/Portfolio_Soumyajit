@@ -3,6 +3,7 @@
 #contactPage {
     background-color:rgb(30, 30, 30);
     padding: 50px 0;
+    font-family: 'Arial', sans-serif; 
   }
   
   .contact {
@@ -33,6 +34,7 @@
   .name,
   .email,
   .msg {
+    color: aliceblue;
     width: 100%;
     padding: 10px;
     font-size: 1rem;
@@ -48,16 +50,23 @@
     width: 100%;
     padding: 10px;
     background-color: gold;
-    color: #fff;
+    color:black;
+    font-size: 18px;  
+    text-shadow: 3px;
+    font-weight: bold;   
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
   }
   
   .submitBtn:hover {
-    background-color: goldenrod;
+    background-color: rgb(219, 177, 71);
+    /* color:rgb(189, 176, 176); */
+    transform: scale(110%);
+    font-weight: bold;   
   }
   
   .links {

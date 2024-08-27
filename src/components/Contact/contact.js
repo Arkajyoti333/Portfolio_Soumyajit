@@ -18,6 +18,7 @@ const Contact = () => {
       (result) => {
         console.log('Email successfully sent!', result.text);
         toast.success('Email sent successfully!');
+        form.current.reset();    // reset the from dataa in ui
       },
       (error) => {
         console.error('Failed to send email:', error.text);
