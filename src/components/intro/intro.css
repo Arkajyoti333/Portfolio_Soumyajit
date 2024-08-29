@@ -7,17 +7,59 @@
   position: relative;
 }
 
+.profile_image{
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding:1rem;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+}
 .bg {
+  
   height: 328px;
   width: 328px;
   border-radius: 50%;
-  position: absolute;
+  margin-bottom: 3rem;
+  margin-left: 17rem;
+  /* position: absolute; */
   z-index: -1;
-  top: 4rem;
-  right: 0;
+  /* top: 4rem;
+  right: 0; */
   object-fit: cover;
-  border: 2px solid gold;
+  border: 3px solid gold;
+  box-shadow: 3px;
 }
+
+.intro-links {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
+ 
+  gap: 20px;
+  /* position: absolute; */
+  bottom: 0; /* Adjust this value if necessary */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 12rem; /* Adjust this value to align exactly at the bottom of the profile picture */
+  margin-left: 27.5rem;
+}
+
+.intro-links a {
+  text-decoration: none;
+  color: goldenrod;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.intro-links a:hover {
+  transform: scale(1.2);
+  color: orange;
+}
+
+
 
 .introContent {
   position: absolute;
@@ -134,30 +176,6 @@
   100% {
       transform: rotate(0deg);
   }
-}
-
-.intro-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  position: absolute;
-  bottom: 0; /* Adjust this value if necessary */
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 12rem; /* Adjust this value to align exactly at the bottom of the profile picture */
-  margin-left: 27.5rem;
-}
-
-.intro-links a {
-  text-decoration: none;
-  color: goldenrod;
-  font-size: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-.intro-links a:hover {
-  transform: scale(1.2);
-  color: orange;
 }
 
 @media screen and (max-width: 768px) {
