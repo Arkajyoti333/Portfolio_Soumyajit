@@ -27,20 +27,22 @@ const Intro = () => {
             </a>
             <p>Hire me</p>
           </button>
-          <button className='download-btn'>
+          <button id='resume' className='download-btn'>
             <a href={cv} download > 
               <FaDownload color='Black' className='download-icon' />Resume
             </a>
           </button>
         </div>
       </div>
-      <img src={bg} alt='dp' className='bg' />
+     <div className='profile_image'> <img src={bg} alt='dp' className='bg' />
+      
       <div className='intro-links'>
         <a href='https://www.facebook.com/soumyajit.ray.75'><FaFacebook color='Gold' /></a>
         <a href='https://www.instagram.com/soumyajit_ray/'><FaInstagram color='Gold' /></a>
         <a href='https://x.com/SoumyajitRay5'><FaSquareXTwitter color='Gold' /></a>
         <a href='https://www.linkedin.com/in/soumyajit-ray2002/'><FaLinkedin color='Gold' /></a>
         <a href='https://github.com/somu46'><FaGithub color='Gold' /></a>
+      </div>
       </div>
     </section>
   );
