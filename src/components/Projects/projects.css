@@ -1,0 +1,92 @@
+.projectsTitle {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.8rem; /* Slightly larger for better emphasis */
+    margin-bottom: 20px;
+}
+
+.projectsBars {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between project cards */
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px; /* Adds padding around the project container */
+    max-width: 1200px; /* Limits the width for large screens */
+}
+
+.projectsBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Combined transitions */
+    color: white;
+}
+
+.projectsBar:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.projectsBar img {
+    width: 100%;
+    height: auto;
+    max-height: 40%; /* Ensures the image occupies 40% of the card's height */
+    border-radius: 10px 10px 0 0;
+    object-fit: cover; /* Ensures the image covers the designated area */
+}
+
+.projectsBarText {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0; /* Adds padding to separate text from the image */
+}
+
+.projectsBarText h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.projectsBarText p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 15px;
+    line-height: 1.5; /* Improves readability */
+}
+
+.projectsBarText .links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto; /* Pushes the links to the bottom of the card */
+}
+
+.projectsBarText a {
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 1rem; /* Slightly smaller for a balanced look */
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.projectsBarText a:hover {
+    color: orange;
+}
+
+@media (max-width: 768px) {
+    .projectsBars {
+        grid-template-columns: 1fr; /* Stacks the project cards on smaller screens */
+        padding: 10px;
+    }
+
+    .projectsBar {
+        max-width: 100%; /* Takes full width on smaller screens */
+        margin: 10px 0;  /* Adds space between each project card */
+    }
+}

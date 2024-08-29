@@ -14,7 +14,7 @@
   
   .contactPageTitle {
     font-size: 2.5rem;
-    color: white;
+    color: gold;
     margin-bottom: 20px;
   }
   
@@ -68,18 +68,25 @@
     transform: scale(110%);
     font-weight: bold;   
   }
-  
-  .links {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .link {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-  }
+  .contact-links {
+    display: flex;           /* Aligns the links horizontally */
+    justify-content: center; /* Centers the links within the parent element */
+    gap: 20px;               /* Adds space between each icon */
+    margin-top: 20px;        /* Adds some space above the links */
+}
+
+.contact-links a {
+    text-decoration: none;  /* Removes underline from links */
+    color: goldenrod;       /* Sets the color of the icons */
+    font-size: 1.5rem;      /* Increases the size of the icons */
+    transition: transform 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.contact-links a:hover {
+    transform: scale(1.2);  /* Scales up the icon when hovered */
+    color: orange;          /* Changes the color on hover */
+}
+
   
   @media only screen and (max-width: 768px) {
     .contactPage{

@@ -1,145 +1,198 @@
-/* intro.css */
-
 #intro {
-    height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .bg {
-    height: 328px;
-    width: 328px;
-    border-radius: 50%;
-    position: absolute;
-    z-index: -1;
-    top: 4rem;
-    right: 0;
-    object-fit: cover;
-    border: 2px solid gold;
-  }
-  
-  .introContent {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; /* Adjust alignment as needed */
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
-    z-index: 1; /* Ensure content is above background image */
-  }
-  
-  .hello {
-    margin-bottom: -3rem;
-    margin-left: 2rem;
-    font-size: 3rem;
-    font-weight: 100;
-  }
-  
-  .introName {
-    color: gold;
-  }
-  
-  .introPara {
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin-top: 2rem;
-  }
-  
-  .btn {
-    background: gold;
-    color: black;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1rem;
-    border-radius: 2rem;
-    cursor: pointer;
-    margin-top: 2rem;
-  }
-  
-  .HM {
-    width: 1rem;
-    height: 1rem;
-    margin: 1rem;
-  }
-  
-  .wave {
-    animation-duration: 2.1s;
-    animation-iteration-count: infinite;
-    animation-name: wave-animation;
-    display: inline-block;
-    transform-origin: 70% 70%;
-  }
-  /* .links {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    
-  }
-  
-  .link {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-  } */
-  
-  
-  @keyframes wave-animation {
-    0% {
+  height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  height: 328px;
+  width: 328px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 4rem;
+  right: 0;
+  object-fit: cover;
+  border: 2px solid gold;
+}
+
+.introContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  z-index: 1; /* Ensures content is above background image */
+}
+
+.hello {
+  margin-bottom: -3rem;
+  margin-left: 2rem;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.introName {
+  color: gold;
+}
+
+.introPara {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-top: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between the button and the download icon */
+  margin-top: 2rem;
+}
+
+.btn {
+  background: gold;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem
+}
+.btn>a{
+  color: black;
+  display: inline-block;
+}
+.btn>p{
+  display: inline-block;
+}
+
+.HM {
+  width: 1.2rem;
+  height: 1rem;
+  margin: 1rem;
+}
+.download-btn{
+  background: gold;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 120px;
+  height: 48px;
+  margin-right: 75px;
+}
+.download-btn>a{
+  font-size: 1rem;
+  color: black;
+}
+
+.download-icon {
+  font-size: 1rem; /* Adjust as needed */
+  margin-right: 10px;
+}
+
+.wave {
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  animation-name: wave-animation;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave-animation {
+  0% {
       transform: rotate(0deg);
-    }
-    10% {
+  }
+  10% {
       transform: rotate(-10deg);
-    }
-    20% {
+  }
+  20% {
       transform: rotate(12deg);
-    }
-    30% {
-      transform: rotate(-10deg);
-    }
-    40% {
-      transform: rotate(9deg);
-    }
-    50% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
   }
-  
-  @media screen and (max-width: 768px) {
-    .bg {
+  30% {
+      transform: rotate(-10deg);
+  }
+  40% {
+      transform: rotate(9deg);
+  }
+  50% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }
+}
+
+.intro-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  bottom: 0; /* Adjust this value if necessary */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 12rem; /* Adjust this value to align exactly at the bottom of the profile picture */
+  margin-left: 27.5rem;
+}
+
+.intro-links a {
+  text-decoration: none;
+  color: goldenrod;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.intro-links a:hover {
+  transform: scale(1.2);
+  color: orange;
+}
+
+@media screen and (max-width: 768px) {
+  .bg {
       height: 228px;
       width: 228px;
       top: 1rem;
       margin-top: -0.2rem;
-      margin-right: 4.8rem;
-    }
-  .hello{
-    margin-top: 15.2rem;
-    margin-left: 0.5rem;
-    font-size: 2rem;
-    margin-bottom:0.5rem;
+      margin-right: 5rem;
   }
-    .introContent {
-      margin-top: 9.1rem;
+  .hello {
+      margin-top: 19.80rem;
+      margin-left: 1rem;
+      font-size: 2rem;
+      margin-bottom: 0.00001rem;
+  }
+  .introContent {
+      margin-top: 7.1rem;
       font-size: 1.5rem;
       padding: 1rem;
-    }
-    .introPara{
-      font-size: 1.2rem;
-    }
-    .introText{
-      margin-top: -11rem;
-      font-size: 1.9rem;
-    }
   }
-  
- 
+  .introPara {
+      font-size: 1.2rem;
+      margin-bottom:1rem ;
+      margin-top: 0.25rem;
+  }
+  .introText {
+      margin-top: -10.2rem;
+      font-size: 1.9rem;
+  }
+  .intro-links {
+      margin-left: 0.2rem;
+      margin-bottom: 26rem;
+  }
+  .btn-container{
+    margin-top: -0.5rem;
+  }
+}

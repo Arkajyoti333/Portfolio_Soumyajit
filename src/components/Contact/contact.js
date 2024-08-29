@@ -1,11 +1,9 @@
 import React, { useRef } from 'react';
 import './contact.css';
-import FBIcon from '../../assets/facebook-icon.png';
-import IGIcon from '../../assets/instagram.png';
-import X from '../../assets/twitter.png';
-import Lin from '../../assets/linkedIn.png';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
+import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   const form = useRef();
@@ -60,16 +58,15 @@ const Contact = () => {
           <button className='submitBtn' type='submit'>
             Submit
           </button>
-
-         <div className='links'> 
-            <img src={FBIcon} alt='facebook' className='link' />
-            <img src={IGIcon} alt='instagram' className='link' />
-            <img src={X} alt='X' className='link' />
-            <img src={Lin} alt='linkedIn' className='link' />
+          </form>
+         <div className='contact-links'> 
+           <a href='https://www.facebook.com/soumyajit.ray.75'><FaFacebook color='Gold'/> </a>
+           <a href='https://www.instagram.com/soumyajit_ray/'> <FaInstagram color='Gold'/></a>
+           <a href='https://x.com/SoumyajitRay5'> <FaSquareXTwitter color='Gold'/> </a>
+           <a href='https://www.linkedin.com/in/soumyajit-ray2002/'> <FaLinkedin color='Gold'/></a>
+           <a href='https://github.com/somu46'> <FaGithub color='Gold'/></a>
           </div>
-         
         
-        </form>
       </div>
     </section>
   );

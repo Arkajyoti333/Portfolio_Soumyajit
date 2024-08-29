@@ -1,39 +1,43 @@
-import React from 'react'
-import './skills.css'
-import UIDesign from '../../assets/ui.png'
-import WebDev from '../../assets/webDev.png'
-import AppDev from '../../assets/appDev.png'
+import React from 'react';
+import './skills.css';
+import UIDesign from '../../assets/ui.png';
+import WebDev from '../../assets/webDev.png';
+import AppDev from '../../assets/appDev.png';
 
 const Skills = () => {
   return (
-    <section id='skills'>
-        <span className='skillTitle'>What I do </span>
-        <span className='skillDesc'>I am skilled and passionate web designer with experience in creating visually appealing and user-friendly websites.I have a strong understanding of design and a keen eye for deatail.i am proficient in HTML,CSS,JavaScript and React,NodeJS as well as design UI and UX.</span>
-        <div className='skillsBars'>
-            <div className='skillBar'>
-            <img src={WebDev} alt='' className='skillBarImg'/>
-                <div className='skillBarText'>
-                    <h1>Web dev</h1>
-                    <p>I can write the content here when i made the whole thing</p>
-                </div>
-            </div>
-            <div className='skillBar'>
-                <img src={UIDesign} alt='' className='skillBarImg'/>
-                <div className='skillBarText'>
-                    <h1>UI&UX</h1>
-                    <p>I can write the content here when i made the whole thing</p>
-                </div>
-            </div>
-            <div className='skillBar'>
-            <img src={AppDev} alt='' className='skillBarImg'/>
-                <div className='skillBarText'>
-                    <h1>App dev</h1>
-                    <p>I can write the content here when i made the whole thing</p>
-                </div>
-            </div>
+    <section id="skills" className="skillsContainer">
+      <h2 className="skillsTitle">What I Do</h2>
+      <p className="skillsDesc">
+        I am a skilled and passionate web designer with experience in creating visually appealing and user-friendly websites. 
+        I have a strong understanding of design and a keen eye for detail. 
+        I am proficient in HTML, CSS, JavaScript, React, and NodeJS, as well as UI and UX design.
+      </p>
+      <div className="skillsBars">
+        <div className="skillBar">
+          <img src={WebDev} alt="Web Development" className="skillBarImg" />
+          <div className="skillBarText">
+            <h3>Web Development</h3>
+            <p>I can write the content here when I have completed the whole thing.</p>
+          </div>
         </div>
+        <div className="skillBar">
+          <img src={UIDesign} alt="UI/UX Design" className="skillBarImg" />
+          <div className="skillBarText">
+            <h3>UI/UX Design</h3>
+            <p>I can write the content here when I have completed the whole thing.</p>
+          </div>
+        </div>
+        <div className="skillBar">
+          <img src={AppDev} alt="App Development" className="skillBarImg" />
+          <div className="skillBarText">
+            <h3>App Development</h3>
+            <p>I can write the content here when I have completed the whole thing.</p>
+          </div>
+        </div>
+      </div>
     </section>
-  )
+  );
 }
 
-export default Skills
+export default Skills;
