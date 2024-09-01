@@ -1,7 +1,11 @@
 import React from 'react';
 import './projects.css';
 import portfolio from '../../assets/Portfolio_pr1.png';
+import EcommerceSite from '../../assets/E-commerceSit.jpg';
+import ToDoApp from "../../assets/ToDoApp.jpg"
+import Ambulance from "../../assets/am.png"
 import { FaGithub } from "react-icons/fa";
+
 
 const projects = () => {
   return (
@@ -23,7 +27,7 @@ const projects = () => {
           </div>
           
           <div className='projectsBar'>
-            <img src={portfolio} alt='Project 2' />
+            <img src={Ambulance} alt='Project 2' />
             <div className='projectsBarText'>
               <h2>Weather App</h2>
               <p>A weather forecasting application that provides real-time data on weather conditions in different cities. Built using React and OpenWeather API.</p>
@@ -35,7 +39,7 @@ const projects = () => {
           </div>
           
           <div className='projectsBar'>
-            <img src={portfolio} alt='Project 3' />
+            <img src={ToDoApp} alt='Project 3' />
             <div className='projectsBarText'>
               <h2>ToDo List</h2>
               <p>A simple yet powerful ToDo list application to keep track of tasks. Features include task addition, deletion, and marking tasks as completed.</p>
@@ -47,7 +51,7 @@ const projects = () => {
           </div>
           
           <div className='projectsBar'>
-            <img src={portfolio} alt='Project 4' />
+            <img src={EcommerceSite} alt='Project 4' />
             <div className='projectsBarText'>
               <h2>E-commerce Site</h2>
               <p>An e-commerce platform offering a wide range of products with features like user authentication, product search, and online payment integration.</p>
