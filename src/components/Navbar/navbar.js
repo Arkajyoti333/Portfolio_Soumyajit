@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png';
 import { Link } from 'react-scroll';
 import contactImg from '../../assets/contact.png';
 // import resumePdf from '../../assets/SoumyajitRay_CV.docx';
-import menu from '../../assets/menu.png';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -30,8 +30,7 @@ const Navbar = () => {
             >
                 <img src={contactImg} alt="Contact icon" className="desktopMenuImg" />Contact me
             </button>
-
-            <img src={menu} alt="Menu" className="mobMenu" onClick={() => setShowMenu(!showMenu)} />
+            <GiHamburgerMenu color="gold" size="large" className="mobMenu" onClick={() => setShowMenu(!showMenu)}/>
             <div className="navMenu" style={{ display: showMenu ? 'flex' : 'none' }}>
                 
                 <Link activeClass="active" to='intro' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)}>Home</Link>
