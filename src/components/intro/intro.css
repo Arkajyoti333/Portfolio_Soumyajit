@@ -176,6 +176,17 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .profile_image{
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .bg{
       height: 228px;
       width: 228px;
