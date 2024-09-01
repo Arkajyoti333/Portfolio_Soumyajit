@@ -4,6 +4,9 @@
     font-size: 1.8rem; /* Slightly larger for better emphasis */
     margin-bottom: 20px;
 }
+.projectsTitle>h1{
+    color: gold;
+}
 
 .projectsBars {
     display: grid;
