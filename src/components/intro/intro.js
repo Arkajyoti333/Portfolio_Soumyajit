@@ -21,28 +21,26 @@ const Intro = () => {
         </h2>
         
         <div className='btn-container'>
-          <button className='btn'>
-            <a href={`mailto:${email}`} className='email-link'>
-              <SiGmail className='HM' />
-            </a>
+          <a href={`mailto:${email}`} className='btn email-link'>
+            <SiGmail className='HM' />
             <p>Hire me</p>
-          </button>
-          <button id='resume' className='download-btn'>
-            <a href={cv} download > 
-              <FaDownload color='Black' className='download-icon' />Resume
-            </a>
-          </button>
+          </a>
+          <a href={cv} download className='btn download-btn'>
+            <FaDownload color='Black' className='download-icon' />
+            <span>Resume</span>
+          </a>
         </div>
+
       </div>
-     <div className='profile_image'> <img src={bg} alt='dp' className='bg' />
-      
-      <div className='intro-links'>
-        <a href='https://www.facebook.com/soumyajit.ray.75'><FaFacebook color='Gold' /></a>
-        <a href='https://www.instagram.com/soumyajit_ray/'><FaInstagram color='Gold' /></a>
-        <a href='https://x.com/SoumyajitRay5'><FaSquareXTwitter color='Gold' /></a>
-        <a href='https://www.linkedin.com/in/soumyajit-ray2002/'><FaLinkedin color='Gold' /></a>
-        <a href='https://github.com/somu46'><FaGithub color='Gold' /></a>
-      </div>
+      <div className='profile_image'> 
+        <img src={bg} alt='dp' className='bg' /> 
+        <div className='intro-links'>
+          <a href='https://www.facebook.com/soumyajit.ray.75'><FaFacebook color='Gold' /></a>
+          <a href='https://www.instagram.com/soumyajit_ray/'><FaInstagram color='Gold' /></a>
+          <a href='https://x.com/SoumyajitRay5'><FaSquareXTwitter color='Gold' /></a>
+          <a href='https://www.linkedin.com/in/soumyajit-ray2002/'><FaLinkedin color='Gold' /></a>
+          <a href='https://github.com/somu46'><FaGithub color='Gold' /></a>
+        </div>
       </div>
     </section>
   );

@@ -5,13 +5,18 @@ import toast from 'react-hot-toast';
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaSquareXTwitter } from "react-icons/fa6";
 
+
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_iyzoaeh', 'template_avdlkv7', form.current, 'HWMnd3nCBwrRVb7ji')
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID, 
+      process.env.REACT_APP_TEMPLATE_ID, 
+      form.current, 
+      process.env.REACT_APP_PUBLIC_KEY)
 .then(
       (result) => {
         console.log('Email successfully sent!', result.text);

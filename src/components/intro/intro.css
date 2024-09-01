@@ -95,9 +95,10 @@
   align-items: center;
   gap: 1rem; /* Space between the button and the download icon */
   margin-top: 2rem;
-}
 
-.btn {
+}
+/*chatgpt*/
+.btn, .download-btn {
   background: gold;
   color: black;
   border: none;
@@ -107,45 +108,41 @@
   padding: 0 1rem;
   border-radius: 2rem;
   cursor: pointer;
-  font-size: 1rem
-}
-.btn>a{
-  color: black;
-  display: inline-block;
-}
-.btn>p{
-  display: inline-block;
-}
-
-.HM {
-  width: 1.2rem;
-  height: 1rem;
-  margin: 1rem;
-}
-.download-btn{
-  background: gold;
-  color: black;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1rem;
-  border-radius: 2rem;
-  cursor: pointer;
-  width: 120px;
-  height: 48px;
-  margin-right: 75px;
-}
-.download-btn>a{
+  width: 160px; /* Fixed width */
+  height: 48px; /* Fixed height */
   font-size: 1rem;
-  color: black;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  text-decoration: none; /* Remove underline from anchor tags */
 }
 
-.download-icon {
-  font-size: 1rem; /* Adjust as needed */
+.btn:hover, .download-btn:hover {
+  background-color: rgb(219, 177, 71); /* Slightly darker gold */
+  transform: scale(1.1); /* Slight scale up */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for a 3D effect */
+  border: 2px solid black; /* Add a black border */
+  color: white; /* Change text color on hover */
+}
+
+.btn p, .download-btn span {
+  margin-left: 0.5rem;
+}
+
+.btn > a, .download-btn > a {
+  color: black;
+  text-decoration: none;
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HM, .download-icon {
+  font-size: 1.2rem; /* Standardized icon size */
   margin-right: 10px;
 }
-
+/*chatgpt*/
 .wave {
   animation-duration: 2.1s;
   animation-iteration-count: infinite;
@@ -179,13 +176,12 @@
 }
 
 @media screen and (max-width: 768px) {
-  .bg {
+  .bg{
       height: 228px;
       width: 228px;
-      top: 1rem;
-      margin-top: -0.2rem;
-      margin-right: 5rem;
+      align-self: center;
   }
+
   .hello {
       margin-top: 19.80rem;
       margin-left: 1rem;
@@ -206,11 +202,13 @@
       margin-top: -10.2rem;
       font-size: 1.9rem;
   }
-  .intro-links {
-      margin-left: 0.2rem;
-      margin-bottom: 26rem;
-  }
-  .btn-container{
+
+  .btn-container {
     margin-top: -0.5rem;
+    flex-direction: row;
+    gap: 0.5rem; /* Reduce gap on smaller screens */
+  }
+  .btn, .download-btn {
+    width: 100%; /* Full width on smaller screens */
   }
 }
