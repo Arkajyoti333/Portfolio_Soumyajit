@@ -30,13 +30,17 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    /* border: 3px solid red; */
 }
+
 
 /* Individual skill bar styling */
 .skillBar {
+    
     background-color: #333;
     border-radius: 10px;
     padding: 20px;
+    padding-top: 5rem;
     width: 300px;
     max-width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -59,15 +63,18 @@
     object-fit: cover;
     height: 60px;
     width: 60px;
+    margin-top: 15px;
     margin-bottom: 15px; /* Adds space between image and text */
     border-radius: 50%;
     background-color: #444;
     padding: 5px;
+    border: 3px solid rgb(230, 203, 54);
 }
 
 /* Text container inside each skill bar */
 .skillBarText {
     text-align: center; /* Centered text alignment */
+  
 }
 
 /* Title inside each skill bar */
