@@ -6,12 +6,14 @@ import Works from "./components/Works/works";
 import Projects from "./components/Projects/projects";
 import Contact from "./components/Contact/contact";
 import { Toaster } from 'react-hot-toast';
+import Resume from "./components/Resume/resume";
 
 function App() {
   return (
     <div className="App">
           <Navbar/>
           <Intro/>
+          <Resume/>
           <About/>
           <Works/>
           <Projects/>

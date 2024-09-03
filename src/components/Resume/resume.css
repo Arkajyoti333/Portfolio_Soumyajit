@@ -1,0 +1,49 @@
+/* resume.css */
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    flex-direction: column;
+    margin-top: -2rem;
+  }
+.resumeTitle{
+    text-align: center;
+    font-size: 2.5rem; /* Large, bold font size */
+    color: gold; /* Dark color for good contrast */
+    margin-bottom: 20px; /* Space between the title and the icon */
+    font-weight: 700; /* Bold text */
+      
+}
+.resumeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh; /* Height of the resume box */
+    width: 80%; /* Width of the resume box */
+    background-color: #333; /* Dark background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+  }
+  
+  .pdfIcon {
+    font-size: 4rem; /* Large icon size */
+    color: gold; /* Gold color for the icon */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  
+    /* Optional: Add a subtle drop shadow to the icon */
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+  }
+  
+  .pdfIcon:hover {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+    color: orange; /* Change color on hover */
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .pdfIcon {
+      font-size: 4rem; /* Reduce icon size for smaller screens */
+    }
+  }
+  
