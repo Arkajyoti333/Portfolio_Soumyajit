@@ -1,7 +1,7 @@
 import React from 'react';
 import './intro.css';
 import bg from '../../assets/dp.png';
-import cv from '../../assets/SoumyajitRay_CV.docx'; 
+import cv from '../../assets/Soumyajit_Ray.pdf'; 
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaDownload } from 'react-icons/fa';
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";

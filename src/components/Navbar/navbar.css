@@ -42,6 +42,14 @@
     border-radius: 2rem;
     cursor: pointer;
 }
+.desktopMenuBtn:hover{
+    background-color: rgb(219, 177, 71); /* Slightly darker gold */
+    transform: scale(1.1); /* Slight scale up */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for a 3D effect */
+    border: 2px solid black; /* Add a black border */
+    color: white; /* Change text color on hover */
+    transition: all 0.3s ease;
+}
 
 .desktopMenuImg{
     object-fit: cover;

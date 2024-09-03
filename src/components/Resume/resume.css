@@ -33,11 +33,17 @@
   
     /* Optional: Add a subtle drop shadow to the icon */
     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+    margin-left: 17.5px;
   }
   
   .pdfIcon:hover {
     transform: scale(1.2); /* Slightly enlarge icon on hover */
     color: orange; /* Change color on hover */
+  }
+  .resumeContainer>a>span{
+    color: white;
+    display: flex;
+    font-size: large;
   }
   
   /* Media query for smaller screens */
