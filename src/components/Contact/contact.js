@@ -24,7 +24,7 @@ const Contact = () => {
         form.current.reset();    // reset the from dataa in ui
       },
       (error) => {
-        console.error('Failed to send email:', error.text);
+        console.error('Failed to send email:', error);
         toast.error("Email sending failed.");
       }
     );
